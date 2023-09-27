@@ -8,6 +8,16 @@ import numpy as np
 import torch
 import torch.nn as nn
 
+# import path, sys
+# folder = path.path(__file__).abspath()
+# sys.path.append(folder.parent.parent)
+
+import sys
+import os
+CURRENT_DIR = os.path.split(os.path.abspath(__file__))[0]  # 当前目录
+config_path = CURRENT_DIR.rsplit('/', 1)[0]  # 上三级目录
+sys.path.append(config_path)
+
 from models.common import Conv
 from utils.downloads import attempt_download
 

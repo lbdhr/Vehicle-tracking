@@ -21,7 +21,7 @@ visualize: false
 
 #in-out
 fourcc: mp4v
-source: ../../videos/cut3.avi
+source: ../../videos/2_14_23_I_75_exit_265_3_C.MP4 # ../../videos/cut3.avi
 output: inference/output
 save_csv: false
 save_txt: false
